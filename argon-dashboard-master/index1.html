@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Argon Dashboard</title>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+
+    <!-- Favicon -->
+    <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Argon CSS -->
+    <link type="text/css" href="assets/css/argon.css?v=1.2.0" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- navbar section -->
+    <div class="container">
+        <nav class="navbar navbar-horizontal navbar-expand-lg navbar-dark bg-default">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar-default">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="javascript:void(0)">
+                                    <img src="../../assets/img/brand/blue.png">
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                    data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-icon" href="#">
+                                <i class="ni ni-cloud-download-95"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-icon" href="#">
+                                <i class="ni ni-credit-card"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabs_2_2" role="tab"
+                                aria-controls="profile" aria-selected="false">
+                                <span class="nav-link-icon d-block"><i class="ni ni-bell-55"></i></span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nav-link-icon" href="#" id="navbar-default_dropdown_1" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-controls="profile"
+                                aria-expanded="false">
+                                <i class="ni ni-circle-08"><span> Temporary</span></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- navbar section -->
+
+
+
+    <!-- search section -->
+    <div class="container">
+        <div class="row">
+            <div class="col"><span style="margin:3rem; display: flex; font-size: 2rem;">Clients</span></div>
+            <div class="col">
+                <span style="margin:3rem;width: 100%; display: flex; "><input type=" text"
+                        class="form-control form-control" placeholder="Search by Customer name/email"></span>
+            </div>
+            <div class="col-1 "><span style="margin:3rem;width: 100%;padding-left:2rem;display:inline-flex;"><button
+                        type=" button" class="btn btn-default btn-sm">Search</button></span></div>
+            <div class="col-6"><span style="margin:3rem;width: 100%; padding-right: 16rem;display: flex;"><button
+                        class=" btn btn-default btn-sm">Add
+                        New
+                        Customer</button></span></div>
+        </div>
+    </div>
+
+
+    <!-- search section -->
+
+
+
+    <!--table section -->
+    <div class="container">
+        <div class="table-responsive">
+            <div>
+                <table class="table align-items-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col" class="sort" data-sort="name">CLIENT ID</th>
+                            <th scope="col" class="sort" data-sort="budget">CLOSING AGENT</th>
+                            <th scope="col" class="sort" data-sort="status">COMPANY</th>
+                            <th scope="col">ORDER</th>
+                            <th scope="col" class="sort" data-sort="completion">INVOICE PAID</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <div>
+                        <tbody id="table" class="list">
+                            <tr scope="row">
+                                <th>
+                                    <div class="media align-items-center">
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm"></span>
+                                        </div>
+                                    </div>
+
+                                </th>
+                            </tr>
+                        </tbody>
+                    </div>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- table section -->
+
+
+    <!-- Core -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+
+    <!-- Argon JS -->
+    <script src="assets/js/argon.min.js"></script>
+    <script src="/index.js">
+    </script>
+</body>
+
+</html>
